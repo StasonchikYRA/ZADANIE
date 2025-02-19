@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VPN Service</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card-img-top {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        .navbar-brand img {
+            height: 40px; /* Adjust the height as needed */
+        }
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="50">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="your-logo.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servers">Серверы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews">Отзывы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Section -->
+    <section id="home" class="py-3 mt-5 text-center">
+        <div class="container">
+            <h1>Защитите ваше интернет-соединение</h1>
+            <p>с военным уровнем шифрования.</p>
+            <p>Подключайтесь к любимым сайтам и приложениям безопасно из любого места.</p>
+            <a href="#servers" class="btn btn-primary btn-lg">Подключиться</a>
+        </div>
+    </section>
+
+    <!-- Carousel with Images -->
+    <section id="carousel" class="py-5">
+        <div class="container">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="image1.jpg" class="d-block w-100 card-img-top" alt="Image 1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Заголовок слайда 1</h5>
+                            <p>Описание слайда 1.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image2.jpg" class="d-block w-100 card-img-top" alt="Image 2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Заголовок слайда 2</h5>
+                            <p>Описание слайда 2.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="image3.jpg" class="d-block w-100 card-img-top" alt="Image 3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Заголовок слайда 3</h5>
+                            <p>Описание слайда 3.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Следующий</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Table with VPN Servers -->
+    <section id="servers" class="py-5">
+        <div class="container">
+            <h2>Доступные VPN серверы</h2>
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Регион</th>
+                            <th>Доступные страны</th>
+                            <th>Нагрузка сервера</th>
+                            <th>Действие</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="align-middle">Северная Америка</td>
+                            <td class="align-middle">США, Канада, Мексика</td>
+                            <td class="align-middle">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+                                </div>
+                            </td>
+                            <td class="align-middle"><button class="btn btn-primary btn-sm">Подключиться</button></td>
+                        </tr>
+                        <tr>
+                            <td class="align-middle">Европа</td>
+                            <td class="align-middle">Великобритания, Германия, Франция</td>
+                            <td class="align-middle">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                                </div>
+                            </td>
+                            <td class="align-middle"><button class="btn btn-primary btn-sm">Подключиться</button></td>
+                        </tr>
+                        <tr>
+                            <td class="align-middle">Азия</td>
+                            <td class="align-middle">Япония, Южная Корея, Китай</td>
+                            <td class="align-middle">
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                                </div>
+                            </td>
+                            <td class="align-middle"><button class="btn btn-primary btn-sm">Подключиться</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- VPN Encryption Settings -->
+    <section id="encryption" class="py-5">
+        <div class="container">
+            <h2>Настройка шифрования VPN</h2>
+            <label for="encryptionRange" class="form-label">Уровень шифрования: <span id="encryptionValue">128-bit</span></label>
+            <input type="range" class="form-range" min="64" max="256" step="64" id="encryptionRange" value="128">
+        </div>
+    </section>
+
+    <!-- User Reviews -->
+    <section id="reviews" class="py-5">
+        <div class="container">
+            <h2>Отзывы пользователей</h2>
+            <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <blockquote class="blockquote">
+                            <p>"Лучший VPN, который я использовал. Надежная защита и отличная скорость!"</p>
+                            <footer class="blockquote-footer">Иван Иванов</footer>
+                        </blockquote>
+                    </div>
+                    <div class="carousel-item">
+                        <blockquote class="blockquote">
+                            <p>"Отличная служба поддержки, помогли быстро настроить VPN."</p>
+                            <footer class="blockquote-footer">Мария Смирнова</footer>
+                        </blockquote>
+                    </div>
+                    <div class="carousel-item">
+                        <blockquote class="blockquote">
+                            <p>"Я пользуюсь этим VPN каждый день и очень доволен."</p>
+                            <footer class="blockquote-footer">Петр Кузнецов</footer>
+                        </blockquote>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#reviewsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Следующий</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2>Свяжитесь с нами</h2>
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-4">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="validationCustom01" placeholder="Имя" required>
+                        <label for="validationCustom01">Имя</label>
+                        <div class="valid-feedback">
+                            Все в порядке!
+                        </div>
+                        <div class="invalid-feedback">
+                            Пожалуйста, введите ваше имя.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="validationCustom02" placeholder="Фамилия" required>
+                        <label for="validationCustom02">Фамилия</label>
+                        <div class="valid-feedback">
+                            Все в порядке!
+                        </div>
+                         <div class="invalid-feedback">
+                            Пожалуйста, введите вашу фамилию.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="form-floating">
+                        <div class="input-group has-validation">
+                            <span class="input-group-text" id="inputGroupPrepend">@</span>
+                            <input type="email" class="form-control" id="validationCustomUsername" placeholder="Email" aria-describedby="inputGroupPrepend" required>
+                            <label for="validationCustomUsername">Email</label>
+                            <div class="invalid-feedback">
+                                Пожалуйста, введите ваш email.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-floating">
+                        <textarea class="form-control" id="floatingTextarea2" placeholder="Сообщение" style="height: 100px" required></textarea>
+                        <label for="floatingTextarea2">Сообщение</label>
+                        <div class="invalid-feedback">
+                            Пожалуйста, введите сообщение.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck">
+                            Согласен на обработку персональных данных
+                        </label>
+                        <div class="invalid-feedback">
+                            Вы должны согласиться, прежде чем отправить форму.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Отправить</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Encryption Range
+        const encryptionRange = document.getElementById('encryptionRange');
+        const encryptionValue = document.getElementById('encryptionValue');
+
+        encryptionRange.addEventListener('input', function() {
+            encryptionValue.textContent = this.value + '-bit';
+        });
+
+        // Form validation
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+</body>
+</html>
